@@ -1,0 +1,59 @@
+body{
+    
+}
+.text{
+    text-align: center;
+}
+.textColor{
+    //color: floralwhite;
+}
+.navBarText:hover {
+    background-color: darkgrey;
+    opacity: 0.5;
+}
+.mdgif{
+    margin: 5% 1% 1% 19%;
+    width: 60%
+}
+.manideepName{
+    border-bottom: 3px solid lightgrey;
+    margin-left: 15%;
+}
+.img-circl{
+    border-radius: 50%;
+    width: 40%;
+    margin-left: 24%
+}
+.middleBox{
+    margin-top: 10%
+}
+.active{
+    background-color: beige;
+}
+.downloadButton{
+    float: right;
+    width: 25%;
+    margin-top: 1%
+}
+.resumeSummaryContent{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    text-align: center;
+}
+footer {
+    
+   height:50px;
+   width:100%;
+   background:#999;
+}
+.footerImageLogo{
+    width: 3%;
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-top: 1%;
+    border-color: darkcyan;
+}
+.logoOutbox{
+    margin-left: 32%;
+}

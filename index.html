@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+
+    <title>Manideep Nemani</title>
+    <meta name="description" content="Manideep Portfolio">
+    <meta name="author" content="Vinod">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainCSS.css">
+
+  <script src="module.js"></script>
+</head>
+
+<body class="container-fluid" ng-controller="myCtrl as mnCtrl">
+   <div class="row">
+       
+            <nav class="navbar col-lg-12 col-md-12 col-sm-12" ng-init="tab = 1">
+<div class="col-lg-3 col-md-3 col-sm-3"></div>
+                <a class="navbar-brand active col-lg-3 col-md-3 col-sm-3 text textColor" ng-class="{ active : tab === 1}" ng-click="tab = 1">Home <span class="sr-only">(current)</span></a>
+                <a class="navbar-brand col-lg-3 col-md-3 col-sm-3  text textColor" ng-class="{ active : tab === 2}" ng-click="tab = 2">DevOps</a>
+                <a class="navbar-brand col-lg-3 col-md-3 col-sm-3  text textColor" ng-class="{ active : tab === 3}" ng-click="tab = 3">Resume</a>
+
+            </nav>
+     
+    </div>
+    
+    
+    <div ng-show="tab === 1">        
+        <div class="row">
+            <div class="row">
+            
+                <img src="DEEPU.gif" class="mdgif" alt="Loading" title="Loading" />
+            
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text manideepName">
+                    <h2>Manideep's Portfolio</h2>
+                    <p>It's all about me</p>
+                </div>
+            </div>
+                
+                <div class="row middleBox">
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <img class="img-circl" src="square.png">
+                            <p>browsers like Safari, Chrome, Firefox and IE. 
+                                •	Worked on Bootstrap, LESS to develop User Interface with responsive design. 
+                                •	Implemented HTTP requests using RXJS observable library to handle multiple values overtime.
+                                •	Involved in writing application level code to interact with APIs, Web Services using AJAX, JSON and XML.
+                                •	Written unit test scripts for controllers, filters and services using karma, Jasmine and Protractor.
+                                </p>
+                        </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <img class="img-circl" src="homeSecEducation.jpg">
+                                <p>browsers like Safari, Chrome, Firefox and IE. 
+                                •	Worked on Bootstrap, LESS to develop User Interface with responsive design. 
+                                •	Implemented HTTP requests using RXJS observable library to handle multiple values overtime.
+                                •	Involved in writing application level code to interact with APIs, Web Services using AJAX, JSON and XML.
+                                •	Written unit test scripts for controllers, filters and services using karma, Jasmine and Protractor.
+                                </p>
+                        </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <img class="img-circl" src="homeInterests.jpg">
+                            <p>browsers like Safari, Chrome, Firefox and IE. 
+                                •	Worked on Bootstrap, LESS to develop User Interface with responsive design. 
+                                •	Implemented HTTP requests using RXJS observable library to handle multiple values overtime.
+                                •	Involved in writing application level code to interact with APIs, Web Services using AJAX, JSON and XML.
+                                •	Written unit test scripts for controllers, filters and services using karma, Jasmine and Protractor.
+                            </p>
+                        </div>
+
+                </div>
+            
+        </div>    
+                
+                
+            
+        </div>
+    
+    
+    
+    <div class="row col-lg-12 col-md-12" ng-show="tab === 2">        
+            <div class="row col-lg-12 col-md-12">
+                <p>dev</p>
+               
+            </div>
+        </div>
+    
+    
+    
+    
+    <div class="row col-lg-12 col-md-12" ng-show="tab === 3">        
+            <div class="row col-lg-12 col-md-12">
+               <div class="row">
+                <button type="button" class="btn btn-success downloadButton">Download</button>
+                </div>
+                    <div class="row resumeSummaryContent">
+                        <h2>Summary</h2>
+                        <p>orked on Bootstrap, LESS to develop User Interface with responsive design. 
+                                        •	Implemented HTTP requests using RXJS observable library to handle multiple values overtime.
+                                        •	Involved in writing application level code to interact with APIs, Web Services using AJAX, JSON and XML.
+                                        •	Written unit test scripts for controllers, filters and services using karma, Jasmine and Protractor.
+                        orked on Bootstrap, LESS to develop User Interface with responsive design. 
+                                        •	Implemented HTTP requests using RXJS observable library to handle multiple values overtime.
+                                        •	Involved in writing application level code to interact with APIs, Web Services using AJAX, JSON and XML.
+                                        •	Written unit test scripts for controllers, filters and services using karma, Jasmine and Protractor.
+                        orked on Bootstrap, LESS to develop User Interface with responsive design. 
+                                        •	Implemented HTTP requests using RXJS observable library to handle multiple values overtime.
+                                        •	Involved in writing application level code to interact with APIs, Web Services using AJAX, JSON and XML.
+                                        •	Written unit test scripts for controllers, filters and services using karma, Jasmine and Protractor.</p>
+                    </div>
+                    <div class="row resumeSummaryContent">
+                        <h2>My Achievements</h2>
+                        <p>orked on Bootstrap, LESS to develop User Interface with responsive design. 
+                                        •	Implemented HTTP requests using RXJS observable library to handle multiple values overtime.
+                                        •	Involved in writing application level code to interact with APIs, Web Services using AJAX, JSON and XML.
+                                        •	Written unit test scripts for controllers, filters and services using karma, Jasmine and Protractor.
+                        orked on Bootstrap, LESS to develop User Interface with responsive design. 
+                                        •	Implemented HTTP requests using RXJS observable library to handle multiple values overtime.
+                                        •	Involved in writing application level code to interact with APIs, Web Services using AJAX, JSON and XML.
+                                        •	Written unit test scripts for controllers, filters and services using karma, Jasmine and Protractor.
+                        orked on Bootstrap, LESS to develop User Interface with responsive design. 
+                                        •	Implemented HTTP requests using RXJS observable library to handle multiple values overtime.
+                                        •	Involved in writing application level code to interact with APIs, Web Services using AJAX, JSON and XML.
+                                        •	Written unit test scripts for controllers, filters and services using karma, Jasmine and Protractor.</p>
+                    </div>
+                </div>
+        </div>
+  <footer><div class="col-lg-8 logoOutbox">
+     <a href="https://www.instagram.com/md_chowdary/?hl=en"><img class="footerImageLogo" src="Instagram.png"></a> 
+      <a href="https://www.facebook.com/profile.php?id=100012278642363"><img class="footerImageLogo" src="facebook.png"></a>
+      <a href=""><img class="footerImageLogo" src="googleplus.png"></a>
+      <a href="https://www.linkedin.com/in/manideep-n"  ><img class="footerImageLogo" src="linkedin.png"></a>
+      <a href="https://www.youtube.com/channel/UCwhlG0hZ1cRlVirD6PsxMOw"><img class="footerImageLogo" src="youtube.png"></a>
+      <a href="https://twitter.com/Manideep_Nemani"> <img class="footerImageLogo" src="twitter.png"></a>
+      </div></footer>
+</body>
+</html>
+        
+            
