@@ -1,11 +1,11 @@
+/*
 body{
-    
-}
-.text{
-    text-align: center;
 }
 .textColor{
-    //color: floralwhite;
+    color: floralwhite;
+}*/
+.text{
+    text-align: center;
 }
 .navBarText:hover {
     background-color: darkgrey;

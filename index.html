@@ -12,25 +12,23 @@
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="mainCSS.css">
-
+    <link rel="stylesheet" href="css.css">
   <script src="module.js"></script>
 </head>
 
 <body class="container-fluid" ng-controller="myCtrl as mnCtrl">
    <div class="row">
-       
             <nav class="navbar col-lg-12 col-md-12 col-sm-12" ng-init="tab = 1">
-<div class="col-lg-3 col-md-3 col-sm-3"></div>
+                <div class="col-lg-3 col-md-3 col-sm-3"></div>
                 <a class="navbar-brand active col-lg-3 col-md-3 col-sm-3 text textColor" ng-class="{ active : tab === 1}" ng-click="tab = 1">Home <span class="sr-only">(current)</span></a>
                 <a class="navbar-brand col-lg-3 col-md-3 col-sm-3  text textColor" ng-class="{ active : tab === 2}" ng-click="tab = 2">DevOps</a>
                 <a class="navbar-brand col-lg-3 col-md-3 col-sm-3  text textColor" ng-class="{ active : tab === 3}" ng-click="tab = 3">Resume</a>
-
             </nav>
-     
     </div>
     
     
-    <div ng-show="tab === 1">        
+    <div ng-show="tab === 1"> 
+               
         <div class="row">
             <div class="row">
             
@@ -73,28 +71,65 @@
                                 •	Written unit test scripts for controllers, filters and services using karma, Jasmine and Protractor.
                             </p>
                         </div>
-
                 </div>
-            
-        </div>    
-                
-                
-            
+        </div>            
         </div>
     
     
-    
-    <div class="row col-lg-12 col-md-12" ng-show="tab === 2">        
-            <div class="row col-lg-12 col-md-12">
-                <p>dev</p>
-               
+    <div class="row" ng-show="tab === 2">        
+            <div>
+                <div class="col-lg-12 col-md-12">
+                <div id ="circles" class="row">
+			        <a href="http://www.google.com" target="_blank">
+			            <div id="git" name ="animation">
+			                <div id = "single-root-circle">
+			                    <img class="img-circle" src="git.png">
+			                    <div class="text-circle">GIT</div> 
+			                </div>
+			            </div>
+			        </a> 
+			            
+			        <a href="http://www.google.com" target="_blank">
+			            <div id="aws" name ="animation">
+			                <div id = "single-root-circle">
+			                    <img class="img-circle" src="AWS.png">
+			                    <div class="text-circle">AWS</div> 
+			                </div>
+			            </div>
+			        </a> 
+			        
+			        <a href="http://www.google.com" target="_blank">
+			            <div id="maven" name ="animation">
+			                <div id = "single-root-circle">
+			                    <img class="img-circle" src="Maven.png">
+			                    <div class="text-circle">Maven</div> 
+			                </div>
+			            </div>
+			        </a> 
+			        
+			        <a href="http://www.google.com" target="_blank">
+			            <div id="ansible" name ="animation">
+			                <div id = "single-root-circle">
+			                    <img class="img-circle" src="ansible.png">
+			                    <div class="text-circle">Ansible</div> 
+			                </div>
+			            </div>
+			        </a> 
+			        
+			        <a href="http://www.google.com" target="_blank">        
+			            <div id="jenkins" name ="animation">
+			                <div id = "single-root-circle">
+			                    <img class="img-circle" src="jenkins.png">
+			                    <div class="text-circle">jenkins</div> 
+			                </div>
+			            </div>
+			        </a>
+                </div>
+            </div>
             </div>
         </div>
-    
-    
-    
-    
-    <div class="row col-lg-12 col-md-12" ng-show="tab === 3">        
+        
+    <div class="row" ng-show="tab === 3">        
             <div class="row col-lg-12 col-md-12">
                <div class="row">
                 <button type="button" class="btn btn-success downloadButton">Download</button>
@@ -131,7 +166,7 @@
                     </div>
                 </div>
         </div>
-  <footer><div class="col-lg-8 logoOutbox">
+  <footer class="row"><div class="col-lg-8 logoOutbox">
      <a href="https://www.instagram.com/md_chowdary/?hl=en"><img class="footerImageLogo" src="Instagram.png"></a> 
       <a href="https://www.facebook.com/profile.php?id=100012278642363"><img class="footerImageLogo" src="facebook.png"></a>
       <a href=""><img class="footerImageLogo" src="googleplus.png"></a>

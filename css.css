@@ -1,0 +1,215 @@
+
+#circles {
+    background-image: url("space.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.img-circle {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border: 2px transparent;
+    padding: 5px;
+    background: transparent; 
+    
+}
+#single-root-circle { width:150px; height:150px;  position: relative;/*dimensions of image*/}
+#single-root-circle .img-circle,
+#single-root-circle .text-circle {
+                        transition: opacity 0.5s ease-in-out;
+                        height: 150px;
+                        width: 150px;
+                        display: flex;
+                        font-stretch: 100%;
+                        text-transform: capitalize;
+                        font-size:45px;
+                        font-weight: bold;
+                        align-items: center;
+                        border-radius: 50%; /* may require vendor prefixes */
+                        background: white;
+                        border: 2px black solid;
+                        padding: 5px;
+                        justify-content: center;
+                        
+                    }
+#single-root-circle .text-circle {
+                        position:absolute;
+                        top:0;
+                        left:0;
+                        opacity:0;
+                    }
+#single-root-circle:hover .img-circle {opacity:0;}
+#single-root-circle:hover .text-circle {
+                        opacity:1;
+                       
+}
+
+#circles { max-width:515px; max-height:515px; position: absolute; 
+    clear: both;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    margin: auto;}
+
+
+/* strat of transform */
+
+#aws {position: absolute;
+    left: 175px;
+    top: 175px;
+    -webkit-animation: awsOrbit 10s linear infinite; /* Chrome, Safari 5 */
+    -moz-animation: awsOrbit 10s linear infinite; /* Firefox 5-15 */
+      -o-animation: awsOrbit 10s linear infinite; /* Opera 12+ */
+         animation: awsOrbit 10s linear infinite; /* Chrome, Firefox 16+, 
+                                                   IE 10+, Safari 5 */
+}
+#git {position: absolute;
+    left: 175px;
+    top: 175px;
+    -webkit-animation: gitOrbit 10s linear infinite; /* Chrome, Safari 5 */
+    -moz-animation: gitOrbit 10s linear infinite; /* Firefox 5-15 */
+      -o-animation: gitOrbit 10s linear infinite; /* Opera 12+ */
+         animation: gitOrbit 10s linear infinite;}
+
+#maven {position: absolute;
+    left: 175px;
+    top: 175px;
+    -webkit-animation: mavenOrbit 10s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: mavenOrbit 10s linear infinite; /* Firefox 5-15 */
+         -o-animation: mavenOrbit 10s linear infinite; /* Opera 12+ */
+            animation: mavenOrbit 10s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */}
+
+#ansible { position: absolute;
+    left: 175px;
+    top: 175px;
+    -webkit-animation: ansibleOrbit 10s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: ansibleOrbit 10s linear infinite; /* Firefox 5-15 */
+         -o-animation: ansibleOrbit 10s linear infinite; /* Opera 12+ */
+            animation: ansibleOrbit 10s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */}
+
+#jenkins { position: absolute;
+    left: 175px;
+    top: 175px;
+    -webkit-animation: jenkinOrbit 10s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: jenkinOrbit 10s linear infinite; /* Firefox 5-15 */
+         -o-animation: jenkinOrbit 10s linear infinite; /* Opera 12+ */
+            animation: jenkinOrbit 10s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */}
+
+#git:hover,#maven:hover, #jenkin:hover, #aws:hover, #ansible:hover  {
+        animation-play-state: paused;
+}
+
+
+/*
+ * Set up the keyframes to actually describe the begining and end states of 
+ * the animation.  The browser will interpolate all the frames between these 
+ * points.  Again, remember your vendor-specific prefixes for now!
+ */
+ @-webkit-keyframes awsOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(0px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(0px) rotate(-360deg); }
+}
+
+@-moz-keyframes awsOrbit {
+    from { -moz-transform: rotate(0deg) translateX(0px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(0px) rotate(-360deg); }
+}
+
+@-o-keyframes awsOrbit {
+    from { -o-transform: rotate(0deg) translateX(0px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(0px) rotate(-360deg); }
+}
+
+@keyframes awsOrbit {
+    from { transform: rotate(0deg) translateX(0px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(0px) rotate(-360deg); }
+}
+
+@-webkit-keyframes gitOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(165px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(165px) rotate(-360deg); }
+}
+
+@-moz-keyframes gitOrbit {
+    from { -moz-transform: rotate(0deg) translateX(165px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(165px) rotate(-360deg); }
+}
+
+@-o-keyframes gitOrbit {
+    from { -o-transform: rotate(0deg) translateX(165px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(165px) rotate(-360deg); }
+}
+
+@keyframes gitOrbit {
+    from { transform: rotate(0deg) translateX(165px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(165px) rotate(-360deg); }
+}
+
+@-webkit-keyframes mavenOrbit {
+    from { -webkit-transform: rotate(90deg) translateX(165px) rotate(-90deg); }
+    to   { -webkit-transform: rotate(450deg) translateX(165px) rotate(-450deg); }
+}
+
+@-moz-keyframes mavenOrbit {
+    from { -moz-transform: rotate(90deg) translateX(165px) rotate(-90deg); }
+    to   { -moz-transform: rotate(450deg) translateX(165px) rotate(-450deg); }
+}
+
+@-o-keyframes mavenOrbit {
+    from { -o-transform: rotate(90deg) translateX(165px) rotate(-90deg); }
+    to   { -o-transform: rotate(450deg) translateX(165px) rotate(-450deg); }
+}
+
+@keyframes mavenOrbit {
+    from { transform: rotate(90deg) translateX(165px) rotate(-90deg); }
+    to   { transform: rotate(450deg) translateX(165px) rotate(-450deg); }
+}
+
+
+@-webkit-keyframes ansibleOrbit {
+    from { -webkit-transform: rotate(180deg) translateX(165px) rotate(-180deg); }
+    to   { -webkit-transform: rotate(540deg) translateX(165px) rotate(-540deg); }
+}
+
+@-moz-keyframes ansibleOrbit {
+    from { -moz-transform: rotate(180deg) translateX(165px) rotate(-180deg); }
+    to   { -moz-transform: rotate(540deg) translateX(165px) rotate(-540deg); }
+}
+
+@-o-keyframes ansibleOrbit {
+    from { -o-transform: rotate(180deg) translateX(165px) rotate(-180deg); }
+    to   { -o-transform: rotate(540deg) translateX(165px) rotate(-540deg); }
+}
+
+@keyframes ansibleOrbit {
+    from { transform: rotate(180deg) translateX(165px) rotate(-180deg); }
+    to   { transform: rotate(540deg) translateX(165px) rotate(-540deg); }
+}
+
+@-webkit-keyframes jenkinOrbit {
+    from { -webkit-transform: rotate(270deg) translateX(165px) rotate(-270deg); }
+    to   { -webkit-transform: rotate(630deg) translateX(165px) rotate(-630deg); }
+}
+
+@-moz-keyframes jenkinOrbit {
+    from { -moz-transform: rotate(270deg) translateX(165px) rotate(-270deg); }
+    to   { -moz-transform: rotate(630deg) translateX(165px) rotate(-630deg); }
+}
+
+@-o-keyframes jenkinOrbit {
+    from { -o-transform: rotate(270deg) translateX(165px) rotate(-270deg); }
+    to   { -o-transform: rotate(630deg) translateX(165px) rotate(-630deg); }
+}
+
+@keyframes jenkinOrbit {
+    from { transform: rotate(270deg) translateX(165px) rotate(-270deg); }
+    to   { transform: rotate(630deg) translateX(165px) rotate(-630deg); }
+}
